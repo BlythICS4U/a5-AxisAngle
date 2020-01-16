@@ -7,14 +7,13 @@ package problem1;
 
 /**
  *
- * @author cgallinaro
+ * @author bachle
  */
 public class Problem1 {
 
     /**
-     * looping1
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping1 RUNTIME COMPLEXITY IS: O(n)
+     *
      * @param n
      */
     public void looping1(int n) {
@@ -24,9 +23,8 @@ public class Problem1 {
     }
 
     /**
-     * looping2
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping2 RUNTIME COMPLEXITY IS: O(n)
+     *
      * @param n
      */
     public void looping2(int n) {
@@ -36,9 +34,8 @@ public class Problem1 {
     }
 
     /**
-     * looping3
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping3 RUNTIME COMPLEXITY IS: O(n^2)
+     *
      * @param n
      */
     public void looping3(int n) {
@@ -50,9 +47,8 @@ public class Problem1 {
     }
 
     /**
-     * looping4
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping4 RUNTIME COMPLEXITY IS: O(n^2)
+     *
      * @param n
      */
     public void looping4(int n) {
@@ -64,9 +60,8 @@ public class Problem1 {
     }
 
     /**
-     * looping4
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping4 RUNTIME COMPLEXITY IS: O(n^2)
+     *
      * @param n
      */
     public void looping5(int n) {
@@ -76,9 +71,8 @@ public class Problem1 {
     }
 
     /**
-     * looping6
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * looping6 RUNTIME COMPLEXITY IS: O(n^5)
+     *
      * @param n
      */
     public void looping6(int n) {
@@ -94,8 +88,7 @@ public class Problem1 {
     }
 
     /**
-     * recursive1
-     * RUNTIME COMPLEXITY IS: O(?)
+     * recursive1 RUNTIME COMPLEXITY IS: O(n)
      *
      * @param n
      * @return
@@ -109,9 +102,8 @@ public class Problem1 {
     }
 
     /**
-     * recursive2
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * recursive2 RUNTIME COMPLEXITY IS: O(n)
+     *
      * @param n
      * @return
      */
@@ -124,9 +116,8 @@ public class Problem1 {
     }
 
     /**
-     * recursive3
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * recursive3 RUNTIME COMPLEXITY IS: O(log2 (n))
+     *
      * @param n
      * @return
      */
@@ -139,9 +130,8 @@ public class Problem1 {
     }
 
     /**
-     * recursive4
-     * RUNTIME COMPLEXITY IS: O(?)
-     * 
+     * recursive4 RUNTIME COMPLEXITY IS: O(2^n)
+     *
      * @param n
      * @param o
      */
@@ -153,5 +143,4 @@ public class Problem1 {
             recursive4(n - 1, o + 1);
         }
     }
-
 }

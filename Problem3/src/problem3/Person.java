@@ -1,21 +1,22 @@
 package problem3;
 
 /**
- * Person represents all possible people affiliated with the school.
- * Class contains school identification number and other meta data.
- * 
- * @author cgallinaro
+ * Person represents all possible people affiliated with the school. Class
+ * contains school identification number and other meta data.
+ *
+ * @author bachle
  */
-public class Person {
-    
+public class Person implements Comparable<Person> {
+
     private final String id;  // School identifier
-    
+
     private String name; // Person's name
-    
+
     private int age; // Person's age
 
     /**
      * Constructor
+     *
      * @param id
      */
     public Person(String id) {
@@ -24,6 +25,7 @@ public class Person {
 
     /**
      * Constructor
+     *
      * @param id
      * @param name
      * @param age
@@ -33,9 +35,10 @@ public class Person {
         this.name = name;
         this.age = age;
     }
-    
+
     /**
      * Get the person's school identifier
+     *
      * @return Person's id
      */
     public String getId() {
@@ -44,6 +47,7 @@ public class Person {
 
     /**
      * Get the person's name
+     *
      * @return Person's name
      */
     public String getName() {
@@ -52,6 +56,7 @@ public class Person {
 
     /**
      * Set the person's name
+     *
      * @param name Person's new name
      */
     public void setName(String name) {
@@ -60,6 +65,7 @@ public class Person {
 
     /**
      * Get the person's age
+     *
      * @return Person's age
      */
     public int getAge() {
@@ -68,10 +74,22 @@ public class Person {
 
     /**
      * Set the person's age
+     *
      * @param age Person's new age
      */
     public void setAge(int age) {
         this.age = age;
     }
-    
+
+    /**
+     * Compares the id of 2 people
+     *
+     * @param o
+     * @return Difference of the 2 id's
+     */
+    @Override
+    public int compareTo(Person o) {
+        return Integer.parseInt(this.getId()) - Integer.parseInt(o.getId());
+    }
+
 }
