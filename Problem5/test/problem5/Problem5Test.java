@@ -62,6 +62,10 @@ public class Problem5Test {
         System.out.println(words5Index.length);
     }
 
+    
+        /**
+     * Test of getCharIndex method, of class Problem5.
+     */
     @Test
     public void getCharIndexTest() {
         int i = 0;
@@ -71,6 +75,9 @@ public class Problem5Test {
         }
     }
 
+        /**
+     * Test of getIndexOfLetters method, of class Problem5.
+     */
     @Test
     public void getIndexOfLettersTest() {
         Assert.assertArrayEquals(Problem5.getIndexOfLetters(words1),words1Index);
@@ -80,6 +87,9 @@ public class Problem5Test {
         Assert.assertArrayEquals(Problem5.getIndexOfLetters(words5),words5Index);
     }
 
+        /**
+     * Test of binarySearch method, of class Problem5.
+     */
     @Test
     public void binarySearchTest() {
         assertEquals(Problem5.binarySearch(words1, "alfa"), 0);
